@@ -1,0 +1,28 @@
+Q-What will the code below output to the console and why ?
+console.log(1 + "2" + "2");
+console.log(1 + +"2" + "2");
+console.log(1 + -"1" + "2");
+console.log(+"1" + "1" + "2");
+console.log( "A" - "B" + "2");
+console.log( "A" - "B" + 2);
+ANS-
+1.console.log(1 + "2" + "2");
+-->as + operator is used to concatenate two strings
+so, the result will be 122
+2.console.log(1 + +"2" + "2");
+-->'+' after 1 is the binary + operator, which will concatenate strings or add numbers.
+console.log(1 +  + "2");
+-->'+' before "2" is the unary + operator, which converts "2" to a number
+so result will be 32
+3.console.log(1 + -"1" + "2");
+as - before "1" is the unary operator, which converts "1" to a number and then produces output of 02
+4.console.log(+"1" + "1" + "2");
+-->+ operator concatenate the strings to form a number i.e., 112
+therefore, the result will be 112
+5.console.log( "A" - "B" + "2");
+-->the result will be NaN2
+6console.log( "A" - "B" + 2);
+-->the result will be NaN
+
+
+
